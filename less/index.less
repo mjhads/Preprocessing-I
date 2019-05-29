@@ -200,22 +200,50 @@ footer {
 
 @media (max-width: 500px) {
 	.container {
-		.flex();
-		flex-direction: column;
-		justify-content: center;
-		align-content: center;
+		// .flex();
+		// flex-direction: column;
+		// justify-content: center;
+		// align-content: center;
 	}
 
 	header {
 		.flex();
 		justify-content: center;
+
+		nav {
+			flex-direction: column;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			font-size: 1.5rem;
+		}
 		
 	}
 
-	nav {
+	.top-part {
+		.flex();
+	
+		img {
+			justify-content: center;
+		}
+
+		h1 {
+			width: 100%;
+			justify-content: center;
+		}
+
+		button {
+			justify-content: center;
+		}
+
+	}
+
+	.middle-part {
+		.flex();
 		flex-direction: column;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
+
+		.listen-up {
+
+		} 
 	}
 }
 
