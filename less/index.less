@@ -155,7 +155,7 @@ header {
 }
 
 .good-stuff {
-	.flex();
+	// .flex();
 	h2 {
 		.secondheader();
 	}
@@ -163,14 +163,26 @@ header {
 		width: 45%;
 		border: 1px solid @coral;
 		justify-content: center;
+		align-content: center;
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
 }
 
 .bottom-part {
+	.flex();
 	h2 {
 		.secondheader();
+	}
+
+	h3 {
+		@coral;
+		font size: 1rem;
+		flex-direction: row;
+	}
+
+	p {
+		flex-direction: column;
 	}
 }
 
@@ -185,3 +197,25 @@ footer {
 		color: white;
 	}
 }
+
+@media (max-width: 500px) {
+	.container {
+		.flex();
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
+
+	header {
+		.flex();
+		justify-content: center;
+		
+	}
+
+	nav {
+		flex-direction: column;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+
