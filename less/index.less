@@ -67,20 +67,23 @@ header {
 	width: 100%;
 	margin: 1rem;
 	padding: 1rem;
-	// border: 1px solid red;
 	display: flex;
 	justify-content: flex-end;
-	nav {
-		// border: 1px solid blue;
-	}
+	// nav {
+		
+	// }
 
 	a {
 		justify-content: space-around;
 		margin: 1rem;
 		padding: 1rem;
-		// border: 1px solid peachpuff;
 		text-decoration: none;
-		color: silver;
+		color: coral;
+	}
+
+	a:hover {
+		text-decoration: underline;
+		text-decoration-color: silver;
 	}
 }
 
@@ -89,14 +92,26 @@ header {
 		width: 27%;
 		height: 17%;
 	}
+
 	h1 {
-
+		font-size: 2.4rem;
+		color: coral;
 	}
-	p {
 
-	}
+	// p {
+
+	// }
+
 	button {
+		padding: .3rem .5rem;
+		margin: .5rem;
+		background: white;
+		color: black;
+		border: 1px solid coral;
+	}
 
+	button:hover {
+		border: 2px dashed coral;
 	}
 }
 
@@ -128,7 +143,13 @@ header {
 }
 
 footer {
+	width: 100%;
+	height: 5rem;
+	background: coral;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	p {
-
+		color: lightgray;
 	}
 }
