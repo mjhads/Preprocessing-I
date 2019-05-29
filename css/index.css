@@ -135,8 +135,13 @@ body {
   height: 100%;
 }
 /*YOUR CODE STARTS HERE*/
+/*variable here*/
+@secondheading {
+  font-size: 1.4rem;
+  color: coral;
+}
 .container {
-  border: 1px solid gray;
+  margin-left: 1rem;
 }
 header {
   width: 100%;
@@ -156,6 +161,9 @@ header a:hover {
   text-decoration: underline;
   text-decoration-color: silver;
 }
+.top-part {
+  background: peachpuff;
+}
 .top-part img {
   width: 27%;
   height: 17%;
@@ -167,12 +175,40 @@ header a:hover {
 .top-part button {
   padding: 0.3rem 0.5rem;
   margin: 0.5rem;
+  margin-bottom: 1rem;
   background: white;
   color: black;
   border: 1px solid coral;
 }
 .top-part button:hover {
   border: 2px dashed coral;
+}
+.middle-part {
+  display: flex;
+}
+.middle-part .listen-up {
+  width: 45%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.middle-part .good-stuff {
+  justify-content: flex-end;
+  width: 45%;
+  margin-left: 2.4rem;
+}
+.good-stuff {
+  display: flex;
+}
+.good-stuff p {
+  width: 45%;
+  border: 1px solid coral;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.bottom-part h2 {
+  font-size: 1.4rem;
+  color: coral;
 }
 footer {
   width: 100%;
@@ -183,5 +219,5 @@ footer {
   align-items: center;
 }
 footer p {
-  color: lightgray;
+  color: white;
 }

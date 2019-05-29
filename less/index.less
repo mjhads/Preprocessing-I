@@ -59,8 +59,17 @@ html, body {
 
 /*YOUR CODE STARTS HERE*/
 
+/*variable here*/
+
+@coral: #FF7F50;
+@peach: #FFE5B4;
+
+/*mixins here*/
+
+
+
 .container {
-	border: 1px solid gray;
+	margin-left: 1rem;
 }
 
 header {
@@ -88,6 +97,7 @@ header {
 }
 
 .top-part {
+	background: peachpuff;
 	img {
 		width: 27%;
 		height: 17%;
@@ -105,6 +115,7 @@ header {
 	button {
 		padding: .3rem .5rem;
 		margin: .5rem;
+		margin-bottom: 1rem;
 		background: white;
 		color: black;
 		border: 1px solid coral;
@@ -116,29 +127,43 @@ header {
 }
 
 .middle-part {
+	display: flex;
+
 	.listen-up {
-
+		width: 45%;
+		justify-content: flex-start;
+		flex-wrap: wrap;
 	}
+
+	.good-stuff {
+		justify-content: flex-end;
+		width: 45%;
+		margin-left: 2.4rem;
+	}
+
 	h2 {
-
+		@secondheading;
 	}
-	p {
 
-	}
 }
 
 .good-stuff {
+	display: flex;
 	h2 {
-
+		@secondheading;
 	}
 	p {
-
+		width: 45%;
+		border: 1px solid coral;
+		justify-content: center;
+		flex-direction: column;
+		flex-wrap: wrap;
 	}
 }
 
 .bottom-part {
 	h2 {
-
+		@secondheading;
 	}
 }
 
@@ -150,6 +175,6 @@ footer {
 	justify-content: center;
 	align-items: center;
 	p {
-		color: lightgray;
+		color: white;
 	}
 }
