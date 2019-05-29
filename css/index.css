@@ -136,9 +136,13 @@ body {
 }
 /*YOUR CODE STARTS HERE*/
 /*variable here*/
-@secondheading {
-  font-size: 1.4rem;
+/*mixins here*/
+.secondheader {
+  font-size: 2.4rem;
   color: coral;
+}
+.flex {
+  display: flex;
 }
 .container {
   margin-left: 1rem;
@@ -155,14 +159,14 @@ header a {
   margin: 1rem;
   padding: 1rem;
   text-decoration: none;
-  color: coral;
+  color: #FF7F50;
 }
 header a:hover {
   text-decoration: underline;
   text-decoration-color: silver;
 }
 .top-part {
-  background: peachpuff;
+  background: #FFE5B4;
 }
 .top-part img {
   width: 27%;
@@ -170,7 +174,7 @@ header a:hover {
 }
 .top-part h1 {
   font-size: 2.4rem;
-  color: coral;
+  color: #FF7F50;
 }
 .top-part button {
   padding: 0.3rem 0.5rem;
@@ -178,10 +182,10 @@ header a:hover {
   margin-bottom: 1rem;
   background: white;
   color: black;
-  border: 1px solid coral;
+  border: 1px solid #FF7F50;
 }
 .top-part button:hover {
-  border: 2px dashed coral;
+  border: 2px dashed #FF7F50;
 }
 .middle-part {
   display: flex;
@@ -196,24 +200,32 @@ header a:hover {
   width: 45%;
   margin-left: 2.4rem;
 }
+.middle-part h2 {
+  font-size: 2.4rem;
+  color: coral;
+}
 .good-stuff {
   display: flex;
 }
+.good-stuff h2 {
+  font-size: 2.4rem;
+  color: coral;
+}
 .good-stuff p {
   width: 45%;
-  border: 1px solid coral;
+  border: 1px solid #FF7F50;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
 }
 .bottom-part h2 {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   color: coral;
 }
 footer {
   width: 100%;
   height: 5rem;
-  background: coral;
+  background: #FF7F50;
   display: flex;
   justify-content: center;
   align-items: center;

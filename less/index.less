@@ -66,7 +66,14 @@ html, body {
 
 /*mixins here*/
 
+.secondheader {
+	font-size: 2.4rem;
+		color: coral;
+}
 
+.flex {
+	display: flex;
+}
 
 .container {
 	margin-left: 1rem;
@@ -76,7 +83,7 @@ header {
 	width: 100%;
 	margin: 1rem;
 	padding: 1rem;
-	display: flex;
+	.flex();
 	justify-content: flex-end;
 	// nav {
 		
@@ -87,7 +94,7 @@ header {
 		margin: 1rem;
 		padding: 1rem;
 		text-decoration: none;
-		color: coral;
+		color: @coral;
 	}
 
 	a:hover {
@@ -97,7 +104,7 @@ header {
 }
 
 .top-part {
-	background: peachpuff;
+	background: @peach;
 	img {
 		width: 27%;
 		height: 17%;
@@ -105,7 +112,7 @@ header {
 
 	h1 {
 		font-size: 2.4rem;
-		color: coral;
+		color: @coral;
 	}
 
 	// p {
@@ -118,16 +125,16 @@ header {
 		margin-bottom: 1rem;
 		background: white;
 		color: black;
-		border: 1px solid coral;
+		border: 1px solid @coral;
 	}
 
 	button:hover {
-		border: 2px dashed coral;
+		border: 2px dashed @coral;
 	}
 }
 
 .middle-part {
-	display: flex;
+	.flex();
 
 	.listen-up {
 		width: 45%;
@@ -142,19 +149,19 @@ header {
 	}
 
 	h2 {
-		@secondheading;
+		.secondheader();
 	}
 
 }
 
 .good-stuff {
-	display: flex;
+	.flex();
 	h2 {
-		@secondheading;
+		.secondheader();
 	}
 	p {
 		width: 45%;
-		border: 1px solid coral;
+		border: 1px solid @coral;
 		justify-content: center;
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -163,15 +170,15 @@ header {
 
 .bottom-part {
 	h2 {
-		@secondheading;
+		.secondheader();
 	}
 }
 
 footer {
 	width: 100%;
 	height: 5rem;
-	background: coral;
-	display: flex;
+	background: @coral;
+	.flex();
 	justify-content: center;
 	align-items: center;
 	p {
